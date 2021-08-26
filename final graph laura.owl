@@ -1,0 +1,2926 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/stlab/its/tecla#"
+     xml:base="http://w3id.org/stlab/its/tecla"
+     xmlns:TI="https://w3id.org/italia/onto/TI/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:arco="https://w3id.org/arco/ontology/arco/"
+     xmlns:core="https://w3id.org/arco/ontology/core/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology="http://w3id.org/stlab/its/teclaaa/ontology/"
+     xmlns:context-description="https://w3id.org/arco/ontology/context-description/">
+    <owl:Ontology rdf:about="http://w3id.org/stlab/its/tecla">
+        <owl:imports rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>ITS project: from text to knowledge graphs</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/bornIn -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/bornIn"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/hasCharacter -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/hasCharacter"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/hasFormat -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/hasFormat"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/hasGenre"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/hasQuote -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/hasQuote"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/hasTheme -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/hasTheme"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/hasTrait -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/hasTrait"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/isCreatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/isCreatedBy"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/isDirectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/isDirectedBy"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/isPartOf"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/marriedTo -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/marriedTo"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/arco/involvesCulturalProperty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/arco/involvesCulturalProperty"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/isAuthorOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/isInspiredBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/isInspiredBy">
+        <owl:equivalentProperty rdf:resource="https://w3id.org/arco/ontology/context-description/isInspiredby"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/isInspiredby -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/isInspiredby"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasLocation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasLocation"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasRole"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/atTime -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/TI/atTime"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dati.beniculturali.it/cis/CulturalEvent -->
+
+    <owl:Class rdf:about="http://dati.beniculturali.it/cis/CulturalEvent"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/birthPlace -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/birthPlace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/conductor -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/conductor">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/deathPlace -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/deathPlace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/director -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/director">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/format -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/format"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/genre -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/genre"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/quote -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/quote"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/theme -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/theme"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaaa/ontology/trait -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/teclaaa/ontology/trait"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/RO/Role -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/RO/Role"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeInterval -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeInterval"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Location -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Location"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Al_Pacino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Al_Pacino">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/director"/>
+        <rdfs:label>Al Pacino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#America -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#America">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:isPartOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/95c150c2-d28b-43a8-af0f-454a747990bc"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>America</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Anne_Hathaway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Anne_Hathaway">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Anne Hathaway</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Arthur_Laurents -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Arthur_Laurents">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/95c150c2-d28b-43a8-af0f-454a747990bc"/>
+        <rdfs:label rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Arthur Laurents</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Baz_Luhrmann -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Baz_Luhrmann">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/director"/>
+        <rdfs:isDefinedBy rdf:resource="  http://w3id.org/stlab/its/tecla/ontology/  "/>
+        <rdfs:label>Baz Luhrmann</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Belfast -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Belfast">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/birthPlace"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>Belfast</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Can_You_Feel_the_Love_Tonight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Can_You_Feel_the_Love_Tonight">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:isCreatedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Elton_John"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Can You Feel the Love Tonight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Cordelia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Cordelia">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:label>Cordelia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Elton_John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Elton_John">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Elton John</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Gil_Junger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Gil_Junger">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/director"/>
+        <rdfs:label>Gil Junger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Giulietta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Giulietta">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Jerome_Robbins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Jerome_Robbins">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/director"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>Jerome Robbins</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#John_Madden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#John_Madden">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/director"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>John Madden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Joseph_Fiennes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Joseph_Fiennes">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6f4eb737-49ca-4a98-bb57-f93b87eef500"/>
+        <rdfs:label>Joseph Fiennes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Joss_Whedon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Joss_Whedon">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/director"/>
+        <rdfs:label>Joss Whedon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Leonard_Bernstein -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Leonard_Bernstein">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/95c150c2-d28b-43a8-af0f-454a747990bc"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Leonard Bernstein</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Mago_Prospero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Mago_Prospero">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ontology:hasQuote rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Il_vostro_alito_spiri_favorevolmente_sulle_mie_vele,_che_altrimenti_tutto_è_stato_inutile._Altro_scopo_non_avevo_se_non_quello_di_farvi_cosa_gradita._Ora_non_ho_più_spiriti_al_mio_comando,_non_più_incantesimi"/>
+        <ontology:hasQuote rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Siamo_fatti_anche_noi_della_materia_di_cui_son_fatti_i_sogni;_e_nello_spazio_e_nel_tempo_d’un_sogno_è_racchiusa_la_nostra_breve_vita"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Mago Prospero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Maria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Maria">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:isPartOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/95c150c2-d28b-43a8-af0f-454a747990bc"/>
+        <rdfs:label rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Maria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Nahum_Tate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Nahum_Tate">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/director"/>
+        <rdfs:label>Nahum Tate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Più_grande_poeta_di_tutti_i_tempi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Più_grande_poeta_di_tutti_i_tempi">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Più grande poeta di tutti i tempi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Problematico_allestimento_di_Amleto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Problematico_allestimento_di_Amleto">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/theme"/>
+        <rdfs:isDefinedBy rdf:resource="  http://w3id.org/stlab/its/tecla/ontology/  "/>
+        <rdfs:label>Problematico allestimento di Amleto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Professione_del_commediografo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Professione_del_commediografo">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>Professione del commediografo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Rob_Minkoff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Rob_Minkoff">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/director"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>Rob Minkoff</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Robert_Wise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Robert_Wise">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/director"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>Robert Wise</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Roger_Allers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Roger_Allers">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/director"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>Roger Allers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Romeo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Romeo">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Sfortunato_amore_fra_Romeo_e_Giulietta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Sfortunato_amore_fra_Romeo_e_Giulietta">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>Sfortunato amore fra Romeo e Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Somewhere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Somewhere">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:isPartOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/95c150c2-d28b-43a8-af0f-454a747990bc"/>
+        <rdfs:label rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Somewhere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Stephen_Sondheim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Stephen_Sondheim">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/95c150c2-d28b-43a8-af0f-454a747990bc"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Stephen Sondheim</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Stratford-upon-Avon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Stratford-upon-Avon">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/birthPlace"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>Stratford-upon-Avon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Tom_Stoppard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Tom_Stoppard">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tom Stoppard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Tonight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Tonight">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:isPartOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/95c150c2-d28b-43a8-af0f-454a747990bc"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tonight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#commedia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#commedia">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#commedia_sentimentale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#commedia_sentimentale">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/genre"/>
+        <rdfs:label>commedia sentimentale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#film -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#film">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/format"/>
+        <rdfs:label>film</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#fratelli_Taviani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#fratelli_Taviani">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/director"/>
+        <rdfs:label>fratelli Taviani</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#la_figura_stessa_del_drammaturgo_britannico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#la_figura_stessa_del_drammaturgo_britannico">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>la figura stessa del drammaturgo britannico</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#musical_teatrale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#musical_teatrale">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/format"/>
+        <rdfs:label>musical teatrale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#orgogliosamente_kitsch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#orgogliosamente_kitsch">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/trait"/>
+        <rdfs:label rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>orgogliosamente kitsch</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#role_of_destiny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#role_of_destiny">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/theme"/>
+        <rdfs:label>role of destiny</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#tensioni_razziali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#tensioni_razziali">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>Tensioni razziali</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#tragicommedia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#tragicommedia">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/genre"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>tragicommedia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#1564 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#1564">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1564</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#1960 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#1960">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1960</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#1998 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#1998">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1998</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Il_vostro_alito_spiri_favorevolmente_sulle_mie_vele,_che_altrimenti_tutto_è_stato_inutile._Altro_scopo_non_avevo_se_non_quello_di_farvi_cosa_gradita._Ora_non_ho_più_spiriti_al_mio_comando,_non_più_incantesimi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Il_vostro_alito_spiri_favorevolmente_sulle_mie_vele,_che_altrimenti_tutto_è_stato_inutile._Altro_scopo_non_avevo_se_non_quello_di_farvi_cosa_gradita._Ora_non_ho_più_spiriti_al_mio_comando,_non_più_incantesimi">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/quote"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>Il vostro alito spiri favorevolmente sulle mie vele, che altrimenti tutto è stato inutile. Altro scopo non avevo se non quello di farvi cosa gradita. Ora non ho più spiriti al mio comando, non più incantesimi.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Siamo_fatti_anche_noi_della_materia_di_cui_son_fatti_i_sogni;_e_nello_spazio_e_nel_tempo_d’un_sogno_è_racchiusa_la_nostra_breve_vita -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Siamo_fatti_anche_noi_della_materia_di_cui_son_fatti_i_sogni;_e_nello_spazio_e_nel_tempo_d’un_sogno_è_racchiusa_la_nostra_breve_vita">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/teclaaa/ontology/quote"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/ "/>
+        <rdfs:label>Siamo fatti anche noi della materia di cui son fatti i sogni; e nello spazio e nel tempo d’un sogno è racchiusa la nostra breve vita</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Something&apos;s_Coming -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Something&apos;s_Coming">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:isPartOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/95c150c2-d28b-43a8-af0f-454a747990bc"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Something&apos;s Coming</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Agent/c591590c-c8b0-4ba5-ac69-1a345d1787ac -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Agent/c591590c-c8b0-4ba5-ac69-1a345d1787ac">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/91c9a1c2-60a4-4e5a-a368-bdf7e2c9c55f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Sharks</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Agent/d7fa6627-dce7-4448-a0a2-2db2fd8307fe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Agent/d7fa6627-dce7-4448-a0a2-2db2fd8307fe">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/91c9a1c2-60a4-4e5a-a368-bdf7e2c9c55f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Jets</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Agent/f50ddf09-105f-4223-9932-bdb492fc6f9e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Agent/f50ddf09-105f-4223-9932-bdb492fc6f9e">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Disney</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Agent/4533c4ef-13c9-4f56-a071-75ccc250dba7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Agent/4533c4ef-13c9-4f56-a071-75ccc250dba7">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/d6bf4423-b073-4e30-9c57-eb996fad7373"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Rosencrantz e Guildenstern</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11CulturalEvent/edc58742-ad92-4c67-a81b-638beda5cb9c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11CulturalEvent/edc58742-ad92-4c67-a81b-638beda5cb9c">
+        <rdf:type rdf:resource="http://dati.beniculturali.it/cis/CulturalEvent"/>
+        <arco:involvesCulturalProperty rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/941ea293-e148-4d8c-9e38-15da50993109"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>performed at</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11CulturalEvent/feb611c2-7556-4a8d-b8ca-aec0bbef97ee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11CulturalEvent/feb611c2-7556-4a8d-b8ca-aec0bbef97ee">
+        <rdf:type rdf:resource="http://dati.beniculturali.it/cis/CulturalEvent"/>
+        <arco:involvesCulturalProperty rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/50d6e1a3-8a0a-40df-b352-e9a3f9519138"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/13d16300-8ca0-4d23-91e7-2aa1ea01d1dd"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Festival di Venezia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11CulturalEvent/0b3de1c3-727f-4a57-9cd7-efc2458f3bd9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11CulturalEvent/0b3de1c3-727f-4a57-9cd7-efc2458f3bd9">
+        <rdf:type rdf:resource="http://dati.beniculturali.it/cis/CulturalEvent"/>
+        <arco:involvesCulturalProperty rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6171caba-7c7f-47eb-a738-4ee14e090835"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/47aa77ff-b66e-424b-9343-110c83afb542"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Festival di Berlino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11CulturalEvent/2aea8e5f-cd29-4e63-b4df-0887869ce7ca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11CulturalEvent/2aea8e5f-cd29-4e63-b4df-0887869ce7ca">
+        <rdf:type rdf:resource="http://dati.beniculturali.it/cis/CulturalEvent"/>
+        <arco:involvesCulturalProperty rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/5bf0da41-d647-4147-a7a2-b6fb9c0863b6"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/b88f2a31-4db8-4134-8649-275a5d1e6a2d"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Festival di Venezia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11CulturalEvent/405e1f90-fb90-425d-87aa-f07f6870a423 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11CulturalEvent/405e1f90-fb90-425d-87aa-f07f6870a423">
+        <rdf:type rdf:resource="http://dati.beniculturali.it/cis/CulturalEvent"/>
+        <arco:involvesCulturalProperty rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/033403c6-3405-4322-b766-cd9edb4a15fc"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/7b218ef5-3f42-4e3d-858a-8b16acb26909"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Festival di Berlino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11CulturalEvent/4500c2a9-768b-4b36-a2f2-3681e9dd667c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11CulturalEvent/4500c2a9-768b-4b36-a2f2-3681e9dd667c">
+        <rdf:type rdf:resource="http://dati.beniculturali.it/cis/CulturalEvent"/>
+        <arco:involvesCulturalProperty rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/19147cd3-39be-4125-9541-c394f9d715fa"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/a6b0bf9e-7d57-4414-9bd3-6bcf5a28086d"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Festival di Venezia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/a78e9e2d-4639-4e23-8806-d9aedea8f67e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/a78e9e2d-4639-4e23-8806-d9aedea8f67e">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Amleto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/a977ff6c-a87e-4412-a44a-67ea1b8e4ca7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/a977ff6c-a87e-4412-a44a-67ea1b8e4ca7">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasTheme rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Sfortunato_amore_fra_Romeo_e_Giulietta"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/16f072cd-680f-40b0-a31c-0dbbe686101e"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/38146ca2-6c60-4a4c-b941-6f25c67545db"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo e Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/ab2a1eda-c2d5-4bc4-9778-191a3a789176 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/ab2a1eda-c2d5-4bc4-9778-191a3a789176">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/8894799e-cce4-4e37-9259-34c480592a09"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/61b8aa46-fef8-4abe-ba47-76f0ddbd86a4"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Enrico IV</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/afd52eeb-cfc2-464a-a19b-32807d41c724 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/afd52eeb-cfc2-464a-a19b-32807d41c724">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6890ef75-443d-4398-9e4b-a7b9d0351452"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Hamlet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/b3516a68-d046-4850-b677-be6b7889b0fd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/b3516a68-d046-4850-b677-be6b7889b0fd">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredby rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/33366c49-5f3e-4bde-a7ec-e9f5db48915f"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/228f32b4-259c-451f-ab18-64aa4cc60b1a"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The Fairy Queen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/b8a58996-ddf7-4f4e-bbdf-3f6a8be1a917 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/b8a58996-ddf7-4f4e-bbdf-3f6a8be1a917">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>La bisbetica domata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/b9979930-2d06-4e88-8e5e-cc2d214d9421 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/b9979930-2d06-4e88-8e5e-cc2d214d9421">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/38146ca2-6c60-4a4c-b941-6f25c67545db"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>WEST SIDE STORY</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/cab30ba5-f5a5-4ff3-ab29-89ec543ee35b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/cab30ba5-f5a5-4ff3-ab29-89ec543ee35b">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:isDirectedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Al_Pacino"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/79ee79af-1876-43b5-966e-e90dd7f95807"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/fd57ced2-efae-4096-9ba0-bc18b1fdc6b5"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Riccardo III - Un uomo, un re</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/dec590bf-f5cc-46b6-a4d0-cdd92fcad598 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/dec590bf-f5cc-46b6-a4d0-cdd92fcad598">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6112749f-40ad-4ee5-9708-0e03a57b4b1b"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>RAN</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/ee09ec1a-b246-42a5-850a-8b1e69352fe5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/ee09ec1a-b246-42a5-850a-8b1e69352fe5">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>AMLETO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/033403c6-3405-4322-b766-cd9edb4a15fc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/033403c6-3405-4322-b766-cd9edb4a15fc">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasCharacter rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Giulietta"/>
+        <ontology:hasCharacter rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Romeo"/>
+        <ontology:hasTrait rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#orgogliosamente_kitsch"/>
+        <ontology:isDirectedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/92719525-a211-444c-9982-0fcba5b05841"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/79e97205-f38a-45cd-8bce-4aba185d75ff"/>
+        <core:hasLocation rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/2f68d5ca-128b-42cd-bb75-e76c165ac42e"/>
+        <core:hasLocation rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/261239c4-ce22-46f1-8f72-1366468772d3"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/dab816ba-0126-4ecf-bf14-029fdc1828ec"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo + Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/065f9d74-6f83-4e84-adf7-bdcb9e775517 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/065f9d74-6f83-4e84-adf7-bdcb9e775517">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo e Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/16f072cd-680f-40b0-a31c-0dbbe686101e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/16f072cd-680f-40b0-a31c-0dbbe686101e">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo e Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/17783c46-6f6a-446d-b3ac-7c466a64ad9d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/17783c46-6f6a-446d-b3ac-7c466a64ad9d">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>only real opera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/1784694e-9afc-4838-afc2-aec0528a9f0d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/1784694e-9afc-4838-afc2-aec0528a9f0d">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>una novella italiana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/18ce6625-3ca6-4731-b3ed-aab78faefdca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/18ce6625-3ca6-4731-b3ed-aab78faefdca">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasCharacter rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6f4eb737-49ca-4a98-bb57-f93b87eef500"/>
+        <ontology:hasCharacter rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/2fea9c1c-92a8-46f8-934b-c5575f46a827"/>
+        <ontology:hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#commedia_sentimentale"/>
+        <ontology:hasTheme rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#la_figura_stessa_del_drammaturgo_britannico"/>
+        <ontology:isCreatedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/05a3c57d-c6fa-41ca-9cd3-2754b559adfc"/>
+        <ontology:isDirectedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#John_Madden"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/16f072cd-680f-40b0-a31c-0dbbe686101e"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/bd827596-cdfd-4c53-86ab-ff67b38295c4"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#1998"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare in Love</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/19147cd3-39be-4125-9541-c394f9d715fa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/19147cd3-39be-4125-9541-c394f9d715fa">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/c8534485-bcf1-4157-af50-9e19cdc100a1"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/90f71b69-24b3-488e-8353-d9be34f92592"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Rosencrantz e Guildenstern sono morti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/2c74583b-ecff-41a4-8aea-2577ea2998a1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/2c74583b-ecff-41a4-8aea-2577ea2998a1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/ee09ec1a-b246-42a5-850a-8b1e69352fe5"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>IL RE LEONE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/2f902511-1674-4862-ba77-bfd12187ccff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/2f902511-1674-4862-ba77-bfd12187ccff">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Re Lear</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/232c3569-8e9c-4c65-822b-a652a28f1cdf -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/232c3569-8e9c-4c65-822b-a652a28f1cdf">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/61b8aa46-fef8-4abe-ba47-76f0ddbd86a4"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Falstaff</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/3a6418d8-80f8-4518-a901-2ca94798c48d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/3a6418d8-80f8-4518-a901-2ca94798c48d">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:isDirectedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Rob_Minkoff"/>
+        <ontology:isDirectedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Roger_Allers"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/469548e9-d023-4f62-ab9a-d5ec402e0acc"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Il re leone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/33366c49-5f3e-4bde-a7ec-e9f5db48915f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/33366c49-5f3e-4bde-a7ec-e9f5db48915f">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>A Midsummer Night’s Dream</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/3500772b-df74-4228-bfa1-3b2136373865 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/3500772b-df74-4228-bfa1-3b2136373865">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/5c6cba05-76b7-4c26-be63-d274d904f3fb"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Macbeth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/38146ca2-6c60-4a4c-b941-6f25c67545db -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/38146ca2-6c60-4a4c-b941-6f25c67545db">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/1784694e-9afc-4838-afc2-aec0528a9f0d"/>
+        <core:hasLocation rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/76b0c91f-7c01-418f-b663-38f8a3f8441e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>ROMEO E GIULIETTA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4c3e0972-7102-42fd-a0db-406af1d48852 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4c3e0972-7102-42fd-a0db-406af1d48852">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasCharacter rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Mago_Prospero"/>
+        <ontology:hasTheme rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Professione_del_commediografo"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6f817eb4-307a-4356-b5be-177d8337721a"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/684cae02-5e81-4a87-b95e-df751ea88237"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>La tempesta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4ea0c7bf-956d-4521-81d8-611dcade7f32 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4ea0c7bf-956d-4521-81d8-611dcade7f32">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Amleto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4f82e54c-2525-446a-bb16-d729769ae959 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4f82e54c-2525-446a-bb16-d729769ae959">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Macbeth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4465a540-3246-4d58-9502-c3fb759b420b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4465a540-3246-4d58-9502-c3fb759b420b">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#commedia"/>
+        <ontology:isDirectedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Gil_Junger"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/b8a58996-ddf7-4f4e-bbdf-3f6a8be1a917"/>
+        <core:hasLocation rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/8777755e-950a-4fa1-ac78-cfb554657555"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/03aa5a47-3f20-44a8-9f30-0be309b27d89"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>10 cose che odio di te</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4483ff77-52ad-42f1-8789-0deb5c7c41f3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4483ff77-52ad-42f1-8789-0deb5c7c41f3">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/489dccdf-9a14-4a2d-a94c-3a26dfa9bf84"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/08e4f3df-d211-4189-a358-c1b80de3a0a2"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Trono di sangue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/489dccdf-9a14-4a2d-a94c-3a26dfa9bf84 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/489dccdf-9a14-4a2d-a94c-3a26dfa9bf84">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Macbeth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/5b5dcf59-fe58-4d16-bf9f-2d3e3a4632e4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/5b5dcf59-fe58-4d16-bf9f-2d3e3a4632e4">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/c8534485-bcf1-4157-af50-9e19cdc100a1"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>versione cinematografica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/5bf0da41-d647-4147-a7a2-b6fb9c0863b6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/5bf0da41-d647-4147-a7a2-b6fb9c0863b6">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Belli e dannati</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/5e85583c-6a2a-4f20-8d26-0a2d704efe21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/5e85583c-6a2a-4f20-8d26-0a2d704efe21">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/8894799e-cce4-4e37-9259-34c480592a09"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>adattamenti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/50d6e1a3-8a0a-40df-b352-e9a3f9519138 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/50d6e1a3-8a0a-40df-b352-e9a3f9519138">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasTheme rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Problematico_allestimento_di_Amleto"/>
+        <ontology:isDirectedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/f61cf88e-8795-4349-94fe-ce6c6494b277"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6890ef75-443d-4398-9e4b-a7b9d0351452"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Nel bel mezzo di un gelido inverno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/5113c2eb-bca8-4519-a575-6dc306b38377 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/5113c2eb-bca8-4519-a575-6dc306b38377">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Enrico VIII</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6f817eb4-307a-4356-b5be-177d8337721a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6f817eb4-307a-4356-b5be-177d8337721a">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The Tempest</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/60f5b945-a8c1-457c-9437-17dceedf7daa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/60f5b945-a8c1-457c-9437-17dceedf7daa">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Otello</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6112749f-40ad-4ee5-9708-0e03a57b4b1b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6112749f-40ad-4ee5-9708-0e03a57b4b1b">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>RE LEAR</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6171caba-7c7f-47eb-a738-4ee14e090835 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6171caba-7c7f-47eb-a738-4ee14e090835">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasFormat rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#film"/>
+        <ontology:isDirectedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#fratelli_Taviani"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/7c3930d9-e38c-479b-845e-fd16fe9d7e30"/>
+        <core:hasLocation rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/fca78a8a-2346-4a74-9151-2d12d2133e93"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Cesare deve morire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6890ef75-443d-4398-9e4b-a7b9d0351452 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6890ef75-443d-4398-9e4b-a7b9d0351452">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Amleto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/7b376f00-11ca-4728-8c81-6a05968a5b31 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/7b376f00-11ca-4728-8c81-6a05968a5b31">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/61b8aa46-fef8-4abe-ba47-76f0ddbd86a4"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Enrico V</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/7c3930d9-e38c-479b-845e-fd16fe9d7e30 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/7c3930d9-e38c-479b-845e-fd16fe9d7e30">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Giulio Cesare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/79e97205-f38a-45cd-8bce-4aba185d75ff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/79e97205-f38a-45cd-8bce-4aba185d75ff">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo e Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/8bdfe70a-0f4b-4677-b418-a3885afbffb2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/8bdfe70a-0f4b-4677-b418-a3885afbffb2">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/a5434faf-0f64-40b1-8637-9cfcacc8f472"/>
+        <context-description:isInspiredby rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/a5f59f1b-f2e7-4eaa-9525-94ea1221d20e"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/df4214f8-579a-4b06-a8b4-77802565ba96"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>opera version of The Tempest</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/8f000dfe-d75f-46ab-8e2b-1ebda7a94372 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/8f000dfe-d75f-46ab-8e2b-1ebda7a94372">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasCharacter rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/c8798e4f-6426-4a65-8201-79836f8b8522"/>
+        <ontology:hasCharacter rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/0327466d-8f01-422a-b319-fc35edefe020"/>
+        <ontology:hasCharacter rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/691d204b-561b-4d09-bed0-3f7d59a93566"/>
+        <ontology:isDirectedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/1e3caeec-2599-4d50-b619-17cfa04901fd"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/88c57d8f-b008-4b75-9206-b98a3eecbb26"/>
+        <context-description:isInspiredby rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4f82e54c-2525-446a-bb16-d729769ae959"/>
+        <context-description:isInspiredby rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/7c3e1b61-cf8f-403b-a468-e0ddbe48793d"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Dido and Aeneas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/8f59a9e4-a1b8-4fa2-8bd1-1c8e3550213e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/8f59a9e4-a1b8-4fa2-8bd1-1c8e3550213e">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/a78e9e2d-4639-4e23-8806-d9aedea8f67e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>ROSENCRANTZ E GUILDENSTERN SONO MORTI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/8f81dd11-f27e-4083-9a1d-f85f0da3e628 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/8f81dd11-f27e-4083-9a1d-f85f0da3e628">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasCharacter rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Cordelia"/>
+        <ontology:hasCharacter rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/4b13854a-f9ab-42e2-acdc-341e118926b2"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/3a30f547-6450-4c4f-96b6-5af1fc1942da"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>King Lear</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/800456d0-a15e-47f2-84c7-4f864909b742 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/800456d0-a15e-47f2-84c7-4f864909b742">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/8894799e-cce4-4e37-9259-34c480592a09"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/83ec1de7-8eb3-4c24-ab28-7499737f450b"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>trasposizioni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/81b3c01d-14e2-4e50-93ca-b77d55b1efdb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/81b3c01d-14e2-4e50-93ca-b77d55b1efdb">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasGenre rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#tragicommedia"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/dec590bf-f5cc-46b6-a4d0-cdd92fcad598"/>
+        <core:hasLocation rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/99f5d55b-6416-46d4-b21b-83d454e708f8"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/990c1b6f-b963-4539-9f1f-4118ad0db3ad"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Ran</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/87da770b-a6f9-42b5-ba02-342965ca55aa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/87da770b-a6f9-42b5-ba02-342965ca55aa">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>King Lear</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/88c57d8f-b008-4b75-9206-b98a3eecbb26 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/88c57d8f-b008-4b75-9206-b98a3eecbb26">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/94fca64c-d344-4ca5-9b9d-da3ed60a1aea"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Dido and Aeneas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/9e4d5f66-9d21-4d5d-a929-1748780d94ca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/9e4d5f66-9d21-4d5d-a929-1748780d94ca">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/79e97205-f38a-45cd-8bce-4aba185d75ff"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/33371a2d-8144-403a-bca5-e1ad55c59b2a"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo e Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/941ea293-e148-4d8c-9e38-15da50993109 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/941ea293-e148-4d8c-9e38-15da50993109">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredby rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6f817eb4-307a-4356-b5be-177d8337721a"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Acis and Galatea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/95c150c2-d28b-43a8-af0f-454a747990bc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/95c150c2-d28b-43a8-af0f-454a747990bc">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasFormat rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#musical_teatrale"/>
+        <ontology:hasTheme rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#tensioni_razziali"/>
+        <ontology:isDirectedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Jerome_Robbins"/>
+        <ontology:isDirectedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Robert_Wise"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/b9979930-2d06-4e88-8e5e-cc2d214d9421"/>
+        <core:hasLocation rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/03f41567-3a47-4309-a4bb-1843aac65793"/>
+        <core:hasLocation rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/1d2b4c27-4334-4af1-9bcf-6dde18433aa4"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/4c8bb056-1e1b-407d-a4f7-c49666e01687"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>West Side Story</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/966e94da-5ccb-4c2a-87c0-6d67fcff628c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/966e94da-5ccb-4c2a-87c0-6d67fcff628c">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:isDirectedBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Joss_Whedon"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/501e6d39-7022-471a-a647-898bdf362c28"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Much Ado About Nothing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationRealization/9d4430c4-8db4-4eef-8f15-06f1535f6cae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationRealization/9d4430c4-8db4-4eef-8f15-06f1535f6cae">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"/>
+        <core:hasLocation rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/873d1db6-6b63-4f60-b035-f4c17538c628"/>
+        <TI:atTime rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/0170c659-5ca3-418b-bbdc-78c336026eb3"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>performances of Measure for Measure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/f6a3dc61-784b-4f06-818f-9ea49830d2e7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/f6a3dc61-784b-4f06-818f-9ea49830d2e7">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/7099bb82-23d7-4090-b945-fd279216ecee"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>savana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/fca78a8a-2346-4a74-9151-2d12d2133e93 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/fca78a8a-2346-4a74-9151-2d12d2133e93">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>carcere romano di Rebibbia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/03f41567-3a47-4309-a4bb-1843aac65793 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/03f41567-3a47-4309-a4bb-1843aac65793">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Manhattan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/1d2b4c27-4334-4af1-9bcf-6dde18433aa4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/1d2b4c27-4334-4af1-9bcf-6dde18433aa4">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>New York</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/2f68d5ca-128b-42cd-bb75-e76c165ac42e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/2f68d5ca-128b-42cd-bb75-e76c165ac42e">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Verona Beach</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/7099bb82-23d7-4090-b945-fd279216ecee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/7099bb82-23d7-4090-b945-fd279216ecee">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>corte di Elsinore</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/76b0c91f-7c01-418f-b663-38f8a3f8441e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/76b0c91f-7c01-418f-b663-38f8a3f8441e">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Verona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/873d1db6-6b63-4f60-b035-f4c17538c628 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/873d1db6-6b63-4f60-b035-f4c17538c628">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>London stage</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/8777755e-950a-4fa1-ac78-cfb554657555 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/8777755e-950a-4fa1-ac78-cfb554657555">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>tipico college americano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/93ac5465-12aa-45ae-ac29-6145c3c281fc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/93ac5465-12aa-45ae-ac29-6145c3c281fc">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Drury Lane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/99f5d55b-6416-46d4-b21b-83d454e708f8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Location/99f5d55b-6416-46d4-b21b-83d454e708f8">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Giappone feudale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/a40a2034-d0c6-4241-ae2b-33e9108a2c96 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/a40a2034-d0c6-4241-ae2b-33e9108a2c96">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/5a2803ca-df99-4c4e-b8a6-b288c31617c8"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>River Phoenix</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/a4a4259c-e01a-4308-8c4d-ba516780de52 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/a4a4259c-e01a-4308-8c4d-ba516780de52">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/7c3930d9-e38c-479b-845e-fd16fe9d7e30"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/a5434faf-0f64-40b1-8637-9cfcacc8f472 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/a5434faf-0f64-40b1-8637-9cfcacc8f472">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/4d3f962e-78de-4d8b-8abd-1f32cd846785"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>David Garrick</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/a5f59f1b-f2e7-4eaa-9525-94ea1221d20e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/a5f59f1b-f2e7-4eaa-9525-94ea1221d20e">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/ad99e54a-53ac-4025-aa14-0da6ffc7229a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/ad99e54a-53ac-4025-aa14-0da6ffc7229a">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/7f640a13-72ff-4f25-862f-e2b5e68569ea"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Richard Beymer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/ae855712-49bd-474a-8662-56d71f6097a3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/ae855712-49bd-474a-8662-56d71f6097a3">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Zeffirelli</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/b814601e-bc21-4387-be17-af7136201f8b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/b814601e-bc21-4387-be17-af7136201f8b">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/0adc0a9d-dd79-41de-a396-e10707b5bab1"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Julia Stiles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/bc09159e-e16a-4c30-a151-ff5f95bf5d20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/bc09159e-e16a-4c30-a151-ff5f95bf5d20">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/dbf0c465-db84-44a4-bfd4-bd8635c7c592"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Claudio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/bd827596-cdfd-4c53-86ab-ff67b38295c4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/bd827596-cdfd-4c53-86ab-ff67b38295c4">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ontology:marriedTo rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Anne_Hathaway"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6f4eb737-49ca-4a98-bb57-f93b87eef500"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/16f072cd-680f-40b0-a31c-0dbbe686101e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>William Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/c014be50-dcf1-40c0-8d37-472919d92b21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/c014be50-dcf1-40c0-8d37-472919d92b21">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6f4eb737-49ca-4a98-bb57-f93b87eef500"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/c638fe52-ef77-4e6c-abe4-c94bab36c8c8"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>SHAKESPEARE</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/c1d14c8e-a4d3-40fc-991f-f944fb0f1540 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/c1d14c8e-a4d3-40fc-991f-f944fb0f1540">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/e3a94a0d-9ff0-47dc-88c8-df1d0e588925"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Claire Danes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/c8798e4f-6426-4a65-8201-79836f8b8522 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/c8798e4f-6426-4a65-8201-79836f8b8522">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Aeneas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/d542c1ae-bf1b-4f09-a071-e9d6cf6bd379 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/d542c1ae-bf1b-4f09-a071-e9d6cf6bd379">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/440876a3-70d2-480b-9bc5-960af51549dd"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/6d99ca9f-2c0d-487c-86fe-0bf9f9d1c2a3"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Michael Maloney</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/df35eece-76e2-4fbc-bf05-c400bd9b0492 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/df35eece-76e2-4fbc-bf05-c400bd9b0492">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/894e5d19-ba11-4cbf-adbf-c3e4b1ec3087"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/b3516a68-d046-4850-b677-be6b7889b0fd"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Henry Purcell</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/e488b33d-ce50-4066-89a4-c5b6d0015a83 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/e488b33d-ce50-4066-89a4-c5b6d0015a83">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/0cb0f735-84c2-40d2-aab1-f3c496bb8c35"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Gus Van Sant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/f2d81d43-2d07-4b23-8f3e-d22b3f070e1b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/f2d81d43-2d07-4b23-8f3e-d22b3f070e1b">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Aeneas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/f61cf88e-8795-4349-94fe-ce6c6494b277 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/f61cf88e-8795-4349-94fe-ce6c6494b277">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ontology:bornIn rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Belfast"/>
+        <ontology:bornIn rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#1960"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/f61cf88e-8795-4349-94fe-ce6c6494b277"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/962a8e9c-6a09-40a9-bbce-c59affbea3e3"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Kenneth Branagh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/fc131e52-cde4-4284-b08e-cf9b7d5d45b2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/fc131e52-cde4-4284-b08e-cf9b7d5d45b2">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/8074b279-8cf9-4c92-bb71-9c041bde1555"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Keanu Reeves</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/0327466d-8f01-422a-b319-fc35edefe020 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/0327466d-8f01-422a-b319-fc35edefe020">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Dido</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/04f33210-3519-441d-b395-6916077d7f04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/04f33210-3519-441d-b395-6916077d7f04">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/1a6987f5-f392-4648-87d9-8dc74ead197f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Laurence Olivier</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/05a3c57d-c6fa-41ca-9cd3-2754b559adfc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/05a3c57d-c6fa-41ca-9cd3-2754b559adfc">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/b700b57c-cd3e-4916-bdbb-a67337d41490"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tom Stoppard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/050afb07-e282-48dc-bf3d-7988b6a8751a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/050afb07-e282-48dc-bf3d-7988b6a8751a">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/31b77826-0a43-4323-b3e5-665d106e03c3"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/de88e2a7-4310-43ad-9630-bfae66735c70"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/04c9c3aa-2186-4b50-9ebe-325bbe437fb2"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Simba</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/1b45e1e2-3a99-4824-960e-158cc991e3d7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/1b45e1e2-3a99-4824-960e-158cc991e3d7">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/2fea9c1c-92a8-46f8-934b-c5575f46a827"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Gwyneth Paltrow</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/1bd56683-0f4a-427a-8869-898c5f08877a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/1bd56683-0f4a-427a-8869-898c5f08877a">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/d80d800d-e9e2-4796-b2a5-8cccbf4e73c2"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tatsuya Nakadai</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/1e3caeec-2599-4d50-b619-17cfa04901fd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/1e3caeec-2599-4d50-b619-17cfa04901fd">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/41931d95-626e-4b97-b753-6ab782b12f02"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/476575e4-8e91-4e38-880e-849bb683944a"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/6f4bbfc7-5332-4fc2-81d9-29072cb6ea44"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Nahum Tate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/12b8c3cf-ff0c-4c12-8bcd-79887a3c6e8c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/12b8c3cf-ff0c-4c12-8bcd-79887a3c6e8c">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/0adc0a9d-dd79-41de-a396-e10707b5bab1"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Joseph Gordon-Levitt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/1842d587-ca83-4e03-bda6-e8ea64c345b8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/1842d587-ca83-4e03-bda6-e8ea64c345b8">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/3fd5f332-42c5-43f7-880a-e61c4fe093e7"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Natalie Wood</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/247e5d34-ed64-4494-9e03-82cc455252b5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/247e5d34-ed64-4494-9e03-82cc455252b5">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Purcell</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/31b77826-0a43-4323-b3e5-665d106e03c3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/31b77826-0a43-4323-b3e5-665d106e03c3">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>principe Amleto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/313b130c-e4bb-4a59-85b8-affd2190fbd4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/313b130c-e4bb-4a59-85b8-affd2190fbd4">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/f4d0df49-dc78-47a3-9443-ef7642ca8d3f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Kenneth Branagh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/4b13854a-f9ab-42e2-acdc-341e118926b2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/4b13854a-f9ab-42e2-acdc-341e118926b2">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Edgar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/423cf48a-6c9a-4e87-91f7-8f0a51b339df -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/423cf48a-6c9a-4e87-91f7-8f0a51b339df">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/962a8e9c-6a09-40a9-bbce-c59affbea3e3"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Franco Zeffirelli</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/5c6cba05-76b7-4c26-be63-d274d904f3fb -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/5c6cba05-76b7-4c26-be63-d274d904f3fb">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/065f9d74-6f83-4e84-adf7-bdcb9e775517"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/2f902511-1674-4862-ba77-bfd12187ccff"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4c3e0972-7102-42fd-a0db-406af1d48852"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/4ea0c7bf-956d-4521-81d8-611dcade7f32"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/5113c2eb-bca8-4519-a575-6dc306b38377"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/60f5b945-a8c1-457c-9437-17dceedf7daa"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/698f4ad9-c621-4025-9aa6-7388b8d7f444"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>William Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6df7b2f7-02ca-43ea-a25d-071ac338f17b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6df7b2f7-02ca-43ea-a25d-071ac338f17b">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/8f81dd11-f27e-4083-9a1d-f85f0da3e628"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6f4eb737-49ca-4a98-bb57-f93b87eef500 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6f4eb737-49ca-4a98-bb57-f93b87eef500">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6f4eb737-49ca-4a98-bb57-f93b87eef500"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6f7ea20d-3838-4ba6-b1d9-eb2a7f25517e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6f7ea20d-3838-4ba6-b1d9-eb2a7f25517e">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/43b7b5d8-ebb1-4f30-901b-87f8202cd79c"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Samuel Rogers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/691d204b-561b-4d09-bed0-3f7d59a93566 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/691d204b-561b-4d09-bed0-3f7d59a93566">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Mercury</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/7aea52ce-f9d4-492b-b2b3-b5034117034b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/7aea52ce-f9d4-492b-b2b3-b5034117034b">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/941ea293-e148-4d8c-9e38-15da50993109"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>George Frideric Handel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/7c3e1b61-cf8f-403b-a468-e0ddbe48793d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/7c3e1b61-cf8f-403b-a468-e0ddbe48793d">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Virgil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/7e1bcab1-5e2a-4bb3-9671-4f50436a5d03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/7e1bcab1-5e2a-4bb3-9671-4f50436a5d03">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Romeo"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Leonardo DiCaprio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/74226181-399c-4d3a-936d-b9864cc0a48f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/74226181-399c-4d3a-936d-b9864cc0a48f">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/1a6987f5-f392-4648-87d9-8dc74ead197f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Orson Welles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/79a9689f-090d-47cf-95bb-066b54e9611f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/79a9689f-090d-47cf-95bb-066b54e9611f">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ontology:bornIn rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Stratford-upon-Avon"/>
+        <ontology:bornIn rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#1564"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6f4eb737-49ca-4a98-bb57-f93b87eef500"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/6f817eb4-307a-4356-b5be-177d8337721a"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11#Più_grande_poeta_di_tutti_i_tempi"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/79be0202-4919-4f8c-8b36-d55ea9937d18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/79be0202-4919-4f8c-8b36-d55ea9937d18">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isInspiredBy rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/5c6cba05-76b7-4c26-be63-d274d904f3fb"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Alessandro Manzoni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/79ee79af-1876-43b5-966e-e90dd7f95807 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/79ee79af-1876-43b5-966e-e90dd7f95807">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/6f4eb737-49ca-4a98-bb57-f93b87eef500"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/b8a58996-ddf7-4f4e-bbdf-3f6a8be1a917"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/836b55df-a58a-42cd-b698-8bfae87926aa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/836b55df-a58a-42cd-b698-8bfae87926aa">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/8f000dfe-d75f-46ab-8e2b-1ebda7a94372"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/8894799e-cce4-4e37-9259-34c480592a09 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/8894799e-cce4-4e37-9259-34c480592a09">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/c4de57eb-bd77-4a28-bba4-0b5af1308129"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/894e5d19-ba11-4cbf-adbf-c3e4b1ec3087 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/894e5d19-ba11-4cbf-adbf-c3e4b1ec3087">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isAuthorOf rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11InformationObject/88c57d8f-b008-4b75-9206-b98a3eecbb26"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Purcell</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/9b5d03b2-7d93-4c95-80dc-c579ae71af12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/9b5d03b2-7d93-4c95-80dc-c579ae71af12">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/b79f27ee-e024-4734-b1d5-a25eddaae893"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Akira Kurosawa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/9015bfb1-0295-4476-9d38-366d8d898fa4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/9015bfb1-0295-4476-9d38-366d8d898fa4">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/0adc0a9d-dd79-41de-a396-e10707b5bab1"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Heath Ledger</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/92719525-a211-444c-9982-0fcba5b05841 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/92719525-a211-444c-9982-0fcba5b05841">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/9d40bc94-9a91-4591-8bc5-19bb9c37b66f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Baz Luhrmann</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/b700b57c-cd3e-4916-bdbb-a67337d41490 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/b700b57c-cd3e-4916-bdbb-a67337d41490">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>drammaturghi britannici</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/b79f27ee-e024-4734-b1d5-a25eddaae893 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/b79f27ee-e024-4734-b1d5-a25eddaae893">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>regista giapponese</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/c4de57eb-bd77-4a28-bba4-0b5af1308129 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/c4de57eb-bd77-4a28-bba4-0b5af1308129">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Bardo di Stratford-upon-Avon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/c638fe52-ef77-4e6c-abe4-c94bab36c8c8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/c638fe52-ef77-4e6c-abe4-c94bab36c8c8">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>autore di capolavori del teatro elisabettiano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/d1d80b64-b6dd-41a2-a67e-3226e2535bc3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/d1d80b64-b6dd-41a2-a67e-3226e2535bc3">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>BARDO</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/d6bf4423-b073-4e30-9c57-eb996fad7373 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/d6bf4423-b073-4e30-9c57-eb996fad7373">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>due personaggi minori</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/d80d800d-e9e2-4796-b2a5-8cccbf4e73c2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/d80d800d-e9e2-4796-b2a5-8cccbf4e73c2">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/f1ac3de2-88b4-4fbe-85f6-09aa864e2f06"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Hidetora Ichimonji</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/dbf0c465-db84-44a4-bfd4-bd8635c7c592 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/dbf0c465-db84-44a4-bfd4-bd8635c7c592">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>usurpatore</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/de88e2a7-4310-43ad-9630-bfae66735c70 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/de88e2a7-4310-43ad-9630-bfae66735c70">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>vittima del complotto regicida del perfido Scar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/e3a94a0d-9ff0-47dc-88c8-df1d0e588925 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/e3a94a0d-9ff0-47dc-88c8-df1d0e588925">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Giulietta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/f1ac3de2-88b4-4fbe-85f6-09aa864e2f06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/f1ac3de2-88b4-4fbe-85f6-09aa864e2f06">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>signore della guerra</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/f4d0df49-dc78-47a3-9443-ef7642ca8d3f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/f4d0df49-dc78-47a3-9443-ef7642ca8d3f">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>attore e regista</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/f96ec61c-adbc-4c1a-a2af-645ed30c579d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/f96ec61c-adbc-4c1a-a2af-645ed30c579d">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>giovane nobildonna</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/fa006650-a039-4b6e-8b1c-9a1aa64c303d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/fa006650-a039-4b6e-8b1c-9a1aa64c303d">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>due innamorati</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/fe60f4ce-6644-48fb-834a-ca5c88b3ac18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/fe60f4ce-6644-48fb-834a-ca5c88b3ac18">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Person/050afb07-e282-48dc-bf3d-7988b6a8751a"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>figlioletto del sovrano Musafa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/ffa8e754-4880-4f0b-92fa-cfab57a26ca3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/ffa8e754-4880-4f0b-92fa-cfab57a26ca3">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>figlio ribelle del sindaco di Portland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/0adc0a9d-dd79-41de-a396-e10707b5bab1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/0adc0a9d-dd79-41de-a396-e10707b5bab1">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>protagonisti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/0cb0f735-84c2-40d2-aab1-f3c496bb8c35 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/0cb0f735-84c2-40d2-aab1-f3c496bb8c35">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>regista americano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/0da241f1-fbcd-49b2-bd3d-e3441e981fc5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/0da241f1-fbcd-49b2-bd3d-e3441e981fc5">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Agent/f50ddf09-105f-4223-9932-bdb492fc6f9e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>casa di Topolino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/028041ee-2310-4470-8b28-3a5057986253 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/028041ee-2310-4470-8b28-3a5057986253">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>decennio d&apos;oro per il binomio Shakespeare/cinema</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/04c9c3aa-2186-4b50-9ebe-325bbe437fb2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/04c9c3aa-2186-4b50-9ebe-325bbe437fb2">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>leoncino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/1a6987f5-f392-4648-87d9-8dc74ead197f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/1a6987f5-f392-4648-87d9-8dc74ead197f">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>attori/registi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/2fea9c1c-92a8-46f8-934b-c5575f46a827 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/2fea9c1c-92a8-46f8-934b-c5575f46a827">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/f96ec61c-adbc-4c1a-a2af-645ed30c579d"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Viola de Lesseps</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/3fd5f332-42c5-43f7-880a-e61c4fe093e7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/3fd5f332-42c5-43f7-880a-e61c4fe093e7">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>portoricana Maria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/4d3f962e-78de-4d8b-8abd-1f32cd846785 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/4d3f962e-78de-4d8b-8abd-1f32cd846785">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Actor-manager</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/41931d95-626e-4b97-b753-6ab782b12f02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/41931d95-626e-4b97-b753-6ab782b12f02">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>playwright</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/43b7b5d8-ebb1-4f30-901b-87f8202cd79c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/43b7b5d8-ebb1-4f30-901b-87f8202cd79c">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>poet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/440876a3-70d2-480b-9bc5-960af51549dd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/440876a3-70d2-480b-9bc5-960af51549dd">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Joe Harper</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/476575e4-8e91-4e38-880e-849bb683944a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/476575e4-8e91-4e38-880e-849bb683944a">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>librettist</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/5a2803ca-df99-4c4e-b8a6-b288c31617c8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/5a2803ca-df99-4c4e-b8a6-b288c31617c8">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/67e5b01f-948b-4df2-9be0-ddbcec3cf144"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Mikey Waters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/5195698f-9b47-4a56-b38b-0b1531114921 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/5195698f-9b47-4a56-b38b-0b1531114921">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>marchettaro di strada</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/6bacb13f-d167-4acb-9ac9-94184bef08a4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/6bacb13f-d167-4acb-9ac9-94184bef08a4">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Principe di Danimarca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/6d99ca9f-2c0d-487c-86fe-0bf9f9d1c2a3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/6d99ca9f-2c0d-487c-86fe-0bf9f9d1c2a3">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>attore disoccupato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/6f4bbfc7-5332-4fc2-81d9-29072cb6ea44 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/6f4bbfc7-5332-4fc2-81d9-29072cb6ea44">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>poet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/60ad8434-88fc-4689-a1c3-caf597a18002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/60ad8434-88fc-4689-a1c3-caf597a18002">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>lungometraggi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/61b8aa46-fef8-4abe-ba47-76f0ddbd86a4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/61b8aa46-fef8-4abe-ba47-76f0ddbd86a4">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>opere del Bardo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/67e5b01f-948b-4df2-9be0-ddbcec3cf144 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/67e5b01f-948b-4df2-9be0-ddbcec3cf144">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>gigolò omosessuale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/698f4ad9-c621-4025-9aa6-7388b8d7f444 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/698f4ad9-c621-4025-9aa6-7388b8d7f444">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>drammaturgo originario</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/7f640a13-72ff-4f25-862f-e2b5e68569ea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/7f640a13-72ff-4f25-862f-e2b5e68569ea">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Tony</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/8074b279-8cf9-4c92-bb71-9c041bde1555 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/8074b279-8cf9-4c92-bb71-9c041bde1555">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/ffa8e754-4880-4f0b-92fa-cfab57a26ca3"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/5195698f-9b47-4a56-b38b-0b1531114921"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Scott Favor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/9d40bc94-9a91-4591-8bc5-19bb9c37b66f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/9d40bc94-9a91-4591-8bc5-19bb9c37b66f">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>regista australiano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/91c9a1c2-60a4-4e5a-a368-bdf7e2c9c55f -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/91c9a1c2-60a4-4e5a-a368-bdf7e2c9c55f">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>due gang rivali</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/9547dc32-815d-4828-92c2-01547237947c -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/9547dc32-815d-4828-92c2-01547237947c">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/962a8e9c-6a09-40a9-bbce-c59affbea3e3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/962a8e9c-6a09-40a9-bbce-c59affbea3e3">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>cineasti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/a3a495b6-47dd-4331-a693-01c9b0e56c15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/a3a495b6-47dd-4331-a693-01c9b0e56c15">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>18th century</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/a6b0bf9e-7d57-4414-9bd3-6bcf5a28086d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/a6b0bf9e-7d57-4414-9bd3-6bcf5a28086d">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1990</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/b88f2a31-4db8-4134-8649-275a5d1e6a2d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/b88f2a31-4db8-4134-8649-275a5d1e6a2d">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1991</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/c8534485-bcf1-4157-af50-9e19cdc100a1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/c8534485-bcf1-4157-af50-9e19cdc100a1">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1990</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/dab816ba-0126-4ecf-bf14-029fdc1828ec -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/dab816ba-0126-4ecf-bf14-029fdc1828ec">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1996</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/df4214f8-579a-4b06-a8b4-77802565ba96 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/df4214f8-579a-4b06-a8b4-77802565ba96">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1756</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/f18e5343-b2a0-4e9c-aa16-5f564650fa5e -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/f18e5343-b2a0-4e9c-aa16-5f564650fa5e">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1724</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/fd57ced2-efae-4096-9ba0-bc18b1fdc6b5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/fd57ced2-efae-4096-9ba0-bc18b1fdc6b5">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1996</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/0170c659-5ca3-418b-bbdc-78c336026eb3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/0170c659-5ca3-418b-bbdc-78c336026eb3">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1700</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/03aa5a47-3f20-44a8-9f30-0be309b27d89 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/03aa5a47-3f20-44a8-9f30-0be309b27d89">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1999</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/08e4f3df-d211-4189-a358-c1b80de3a0a2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/08e4f3df-d211-4189-a358-c1b80de3a0a2">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1957</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/13d16300-8ca0-4d23-91e7-2aa1ea01d1dd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/13d16300-8ca0-4d23-91e7-2aa1ea01d1dd">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1995</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/2d71df90-be62-404a-be0b-ecb4c6c03414 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/2d71df90-be62-404a-be0b-ecb4c6c03414">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <core:hasRole rdf:resource="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11Role/028041ee-2310-4470-8b28-3a5057986253"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>anni Novanta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/228f32b4-259c-451f-ab18-64aa4cc60b1a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/228f32b4-259c-451f-ab18-64aa4cc60b1a">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1692</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/261239c4-ce22-46f1-8f72-1366468772d3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/261239c4-ce22-46f1-8f72-1366468772d3">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>anni Novanta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/3a30f547-6450-4c4f-96b6-5af1fc1942da -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/3a30f547-6450-4c4f-96b6-5af1fc1942da">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1681</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/33371a2d-8144-403a-bca5-e1ad55c59b2a -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/33371a2d-8144-403a-bca5-e1ad55c59b2a">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1968</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/4c8bb056-1e1b-407d-a4f7-c49666e01687 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/4c8bb056-1e1b-407d-a4f7-c49666e01687">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>anni Cinquanta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/469548e9-d023-4f62-ab9a-d5ec402e0acc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/469548e9-d023-4f62-ab9a-d5ec402e0acc">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1994</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/47aa77ff-b66e-424b-9343-110c83afb542 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/47aa77ff-b66e-424b-9343-110c83afb542">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>2012</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/501e6d39-7022-471a-a647-898bdf362c28 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/501e6d39-7022-471a-a647-898bdf362c28">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>2012</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/684cae02-5e81-4a87-b95e-df751ea88237 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/684cae02-5e81-4a87-b95e-df751ea88237">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1611</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/7b218ef5-3f42-4e3d-858a-8b16acb26909 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/7b218ef5-3f42-4e3d-858a-8b16acb26909">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1997</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/83ec1de7-8eb3-4c24-ab28-7499737f450b -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/83ec1de7-8eb3-4c24-ab28-7499737f450b">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>fra gli anni Quaranta e Sessanta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/90f71b69-24b3-488e-8353-d9be34f92592 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/90f71b69-24b3-488e-8353-d9be34f92592">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1966</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/94fca64c-d344-4ca5-9b9d-da3ed60a1aea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/94fca64c-d344-4ca5-9b9d-da3ed60a1aea">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1689</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/990c1b6f-b963-4539-9f1f-4118ad0db3ad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/laura/ontologies/2021/7/untitled-ontology-11TimeInterval/990c1b6f-b963-4539-9f1f-4118ad0db3ad">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1985</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
