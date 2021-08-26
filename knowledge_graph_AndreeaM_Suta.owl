@@ -1,0 +1,1735 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/stlab/its/tecla#"
+     xml:base="http://w3id.org/stlab/its/tecla"
+     xmlns:TI="https://w3id.org/italia/onto/TI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:arco="https://w3id.org/arco/ontology/arco/"
+     xmlns:core="https://w3id.org/arco/ontology/core/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology="http://w3id.org/stlab/its/tecla/ontology/"
+     xmlns:context-description="https://w3id.org/arco/ontology/context-description/">
+    <owl:Ontology rdf:about="http://w3id.org/stlab/its/tecla">
+        <owl:imports rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>ITS project: from text to knowledge graphs</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#sameAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#sameAs"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/arco/involvesCulturalProperty -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/arco/involvesCulturalProperty"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/hasAuthor"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/isAuthorOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/isAuthorOf"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/context-description/isInspiredBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/context-description/isInspiredBy"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasLocation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasLocation"/>
+    
+
+
+    <!-- https://w3id.org/arco/ontology/core/hasRole -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/arco/ontology/core/hasRole"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/atTime -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/italia/onto/TI/atTime"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/BibliographicResource -->
+
+    <owl:Class rdf:about="http://purl.org/dc/elements/1.1/BibliographicResource"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#theme -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/tecla#theme"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#trait -->
+
+    <owl:Class rdf:about="http://w3id.org/stlab/its/tecla#trait"/>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla/ontology/birthPlace -->
+
+    <rdf:Description rdf:about="http://w3id.org/stlab/its/tecla/ontology/birthPlace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla/ontology/deathPlace -->
+
+    <rdf:Description rdf:about="http://w3id.org/stlab/its/tecla/ontology/deathPlace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Person -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Person">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/RO/Role -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/RO/Role"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/TI/TimeInterval -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/TI/TimeInterval"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/l0/Location -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/l0/Location"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#I_come_to_wive_it_wealthily_in_Padua -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#I_come_to_wive_it_wealthily_in_Padua">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/quote"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>I come to wive it wealthily in Padua</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#Stratford-upon-Avon -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#Stratford-upon-Avon">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/deathPlace"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>Stratford-upon-Avon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#comedie -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#comedie">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/genre"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#frustration"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#humor"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>comedy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#comic_tragic -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#comic_tragic">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/genre"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>comic tragic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#comical_love -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#comical_love">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>comical love</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#frustration -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#frustration">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>frustration</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#historical -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#historical">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/genre"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>historical</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#historical_problems -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#historical_problems">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>historical problems</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#humor -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#humor">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:seeAlso>humor</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#intelligent -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#intelligent">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#trait"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>intelligent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#legal_problems -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#legal_problems">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>legal problems</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#misogyny -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#misogyny">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>misogyny</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#money -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#money">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>money</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#nation_in_crisis -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#nation_in_crisis">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>nation in crisis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#personal_conflicts_vis-eds_against_those_of_the_state -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#personal_conflicts_vis-eds_against_those_of_the_state">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>personal conflicts vis-eds against those of the state</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#political_problems -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#political_problems">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>political problems</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#psychological_issues -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#psychological_issues">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>psychological issues</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#relativism_of_monarchial_supremacy -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#relativism_of_monarchial_supremacy">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>relativism of monarchial supremacy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#religious_conflicts -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#religious_conflicts">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>religious conflicts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#religious_problems -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#religious_problems">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>religious problems</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#revenge -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#revenge">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>revenge</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#rivalry_between_young_and_old -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#rivalry_between_young_and_old">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>rivalry between young and old</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#romance -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#romance">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/genre"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>romance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#romantic_love -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#romantic_love">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>romantic love</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#sex -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#sex">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>sex</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#strong_sociological_charge -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#strong_sociological_charge">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#trait"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>strong sociological charge</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#tragedie -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#tragedie">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/genre"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>tragedy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#tragic_drama -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#tragic_drama">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/genre"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>tragic drama</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#In_Shakespeare&apos;s_time,_Italy_was_a_place_where_anything_could_happen -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#In_Shakespeare&apos;s_time,_Italy_was_a_place_where_anything_could_happen">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/quote"/>
+        <context-description:hasAuthor rdf:resource="https://w3id.org/arco/its/Person/f9b9750d-5b37-4ea8-8f83-2169f61c4aba"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>In Shakespeare&apos;s time, Italy was a place where anything could happen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#In_fair_Verona,_where_we_lay_our_scene -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#In_fair_Verona,_where_we_lay_our_scene">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/quote"/>
+        <ontology:isPartOf rdf:resource="http://w3id.org/stlab/its/teclaInformationObject/1fc4162f-5c61-4e52-a1e6-fba62443e252"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>In fair Verona, where we lay our scene</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#Many_of_Shakespeare&apos;s_ideas_came_from_Italian_stories_called_&apos;novellas&apos; -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#Many_of_Shakespeare&apos;s_ideas_came_from_Italian_stories_called_&apos;novellas&apos;">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/quote"/>
+        <context-description:hasAuthor rdf:resource="https://w3id.org/arco/its/Person/43e20fd3-fd3d-4241-9b5a-c53c2880c68e"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>Many of Shakespeare&apos;s ideas came from Italian stories called &apos;novellas&apos;</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#To_be_or_not_to_be,_that_is_the_question -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#To_be_or_not_to_be,_that_is_the_question">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/quote"/>
+        <context-description:hasAuthor rdf:resource="https://w3id.org/stlab/its/tecla1Person/c5d684c1-d390-4ccc-904d-fcff215d9e40"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>To be or not to be, that is the question</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#What_news_on_the_Rialto? -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#What_news_on_the_Rialto?">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/quote"/>
+        <ontology:isPartOf rdf:resource="https://w3id.org/arco/its/InformationObject/854501f6-2199-40da-87e6-d739291a80d1"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>What news on the Rialto?</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#man&apos;s_confrontation_with_nature -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#man&apos;s_confrontation_with_nature">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla#theme"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>man&apos;s confrontation with nature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/tecla#to_be_or_not_to_be,_that_is_the_dilemma -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/tecla#to_be_or_not_to_be,_that_is_the_dilemma">
+        <rdf:type rdf:resource="http://w3id.org/stlab/its/tecla/ontology/quote"/>
+        <ontology:isPartOf rdf:resource="http://w3id.org/stlab/its/teclaInformationObject/ee90056d-f31c-42ec-9135-289df892b09b"/>
+        <context-description:hasAuthor rdf:resource="http://w3id.org/stlab/its/teclaPerson/8c6db084-22be-46c5-bb1d-0900a3d36279"/>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/stlab/its/tecla/ontology/"/>
+        <rdfs:label>to be or not to be, that is the dilemma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaBibliographicResource/7fb0cc96-2f97-476e-a55c-492e184e152c -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaBibliographicResource/7fb0cc96-2f97-476e-a55c-492e184e152c">
+        <rdf:type rdf:resource="http://purl.org/dc/elements/1.1/BibliographicResource"/>
+        <dc:date rdf:resource="http://w3id.org/stlab/its/teclaTimeInterval/25d068d6-1cb0-44ee-a98a-7c21ef525322"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare&apos;s English Kings</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaBibliographicResource/8531c9f2-343a-4704-ba22-7ab6d4737ba3 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaBibliographicResource/8531c9f2-343a-4704-ba22-7ab6d4737ba3">
+        <rdf:type rdf:resource="http://purl.org/dc/elements/1.1/BibliographicResource"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Practices of communication in popular culture</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaInformationObject/ea5c9a43-2123-4168-ad06-ffc9f2ee26be -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaInformationObject/ea5c9a43-2123-4168-ad06-ffc9f2ee26be">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasGenre rdf:resource="http://w3id.org/stlab/its/tecla#comedie"/>
+        <ontology:hasGenre rdf:resource="http://w3id.org/stlab/its/tecla#tragedie"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Richard III</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaInformationObject/ee90056d-f31c-42ec-9135-289df892b09b -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaInformationObject/ee90056d-f31c-42ec-9135-289df892b09b">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:isPartOf rdf:resource="http://w3id.org/stlab/its/teclaInformationObject/40c0a4aa-71da-4f16-b57b-d306975ffa00"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Hamlet&apos;s monologue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaInformationObject/06c057a8-0c00-4342-a490-e5a5cba7758d -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaInformationObject/06c057a8-0c00-4342-a490-e5a5cba7758d">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasGenre rdf:resource="http://w3id.org/stlab/its/tecla#comedie"/>
+        <ontology:hasGenre rdf:resource="http://w3id.org/stlab/its/tecla#tragedie"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Richard II</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaInformationObject/1fc4162f-5c61-4e52-a1e6-fba62443e252 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaInformationObject/1fc4162f-5c61-4e52-a1e6-fba62443e252">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <core:hasLocation rdf:resource="https://w3id.org/arco/its/Location/0c8a8830-4c45-44ba-bd06-acc4e2d59983"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo and Juliet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaInformationObject/36d3cf9c-f938-42b8-9944-220bd272e88b -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaInformationObject/36d3cf9c-f938-42b8-9944-220bd272e88b">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Elizabethan theaters</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaInformationObject/40c0a4aa-71da-4f16-b57b-d306975ffa00 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaInformationObject/40c0a4aa-71da-4f16-b57b-d306975ffa00">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:isPartOf rdf:resource="http://w3id.org/stlab/its/teclaRole/a3e204ff-5254-4282-9260-dc3ae7795024"/>
+        <core:hasRole rdf:resource="http://w3id.org/stlab/its/teclaRole/a57357c6-66de-42ba-a439-7d6e3c267c18"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Hamlet, the Prince of Denmark</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaInformationObject/42c2c41a-344d-4d0e-9cfc-87cd456975dd -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaInformationObject/42c2c41a-344d-4d0e-9cfc-87cd456975dd">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#misogyny"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#nation_in_crisis"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#psychological_issues"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#religious_conflicts"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#revenge"/>
+        <ontology:hasTrait rdf:resource="http://w3id.org/stlab/its/tecla#intelligent"/>
+        <ontology:isPartOf rdf:resource="http://w3id.org/stlab/its/teclaInformationObject/36d3cf9c-f938-42b8-9944-220bd272e88b"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Hamlet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaInformationObject/5fdb9d09-99d0-4ecb-94c5-89067672b367 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaInformationObject/5fdb9d09-99d0-4ecb-94c5-89067672b367">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasGenre rdf:resource="http://w3id.org/stlab/its/tecla#comedie"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#comical_love"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>A Midsummer Night&apos;s Dream</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaLocation/f8118e9b-95b8-492e-ab7e-4cd9aa6fa0f9 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaLocation/f8118e9b-95b8-492e-ab7e-4cd9aa6fa0f9">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Stratford-upon-Avon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaLocation/10676c3e-69d7-42a0-ae93-93a7be3f3eb4 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaLocation/10676c3e-69d7-42a0-ae93-93a7be3f3eb4">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>West</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaPerson/b2fe6fe2-2561-4c87-b501-2b57729c9a15 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaPerson/b2fe6fe2-2561-4c87-b501-2b57729c9a15">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ontology:bornIn rdf:resource="http://w3id.org/stlab/its/teclaLocation/f8118e9b-95b8-492e-ab7e-4cd9aa6fa0f9"/>
+        <ontology:bornIn rdf:resource="https://w3id.org/stlab/its/tecla1TimeInterval/00a797e8-c499-4edd-8b14-6defce69b82b"/>
+        <ontology:diedIn rdf:resource="https://w3id.org/stlab/its/tecla1TimeInterval/02f3642f-e0ba-4d75-b59f-7f0336409a81"/>
+        <context-description:isAuthorOf rdf:resource="http://w3id.org/stlab/its/teclaInformationObject/40c0a4aa-71da-4f16-b57b-d306975ffa00"/>
+        <core:hasLocation rdf:resource="http://w3id.org/stlab/its/teclaLocation/10676c3e-69d7-42a0-ae93-93a7be3f3eb4"/>
+        <core:hasRole rdf:resource="http://w3id.org/stlab/its/teclaRole/a30e6daf-dea8-4c66-a8d9-7b9b9b55bac2"/>
+        <core:hasRole rdf:resource="http://w3id.org/stlab/its/teclaRole/ddc4f358-95f1-40ed-a0c6-042316773d12"/>
+        <core:hasRole rdf:resource="http://w3id.org/stlab/its/teclaRole/20c283b4-2165-407b-b837-cddbdb9437fe"/>
+        <core:hasRole rdf:resource="http://w3id.org/stlab/its/teclaRole/4f715689-9e98-4d41-8319-a0677959f753"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>William Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaPerson/f5bb9a3e-940c-439c-bb49-dd991e904cfc -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaPerson/f5bb9a3e-940c-439c-bb49-dd991e904cfc">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Gabriel Harvey</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaPerson/50cf4929-8836-4193-a523-2aaf0c74ecde -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaPerson/50cf4929-8836-4193-a523-2aaf0c74ecde">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isAuthorOf rdf:resource="http://w3id.org/stlab/its/teclaBibliographicResource/8531c9f2-343a-4704-ba22-7ab6d4737ba3"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Jesús Martín-Barbero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaPerson/8c6db084-22be-46c5-bb1d-0900a3d36279 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaPerson/8c6db084-22be-46c5-bb1d-0900a3d36279">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="https://w3id.org/stlab/its/tecla1Person/736a3d0f-3c9b-4543-8f2a-81a4c345f56b"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>William Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaRole/a30e6daf-dea8-4c66-a8d9-7b9b9b55bac2 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaRole/a30e6daf-dea8-4c66-a8d9-7b9b9b55bac2">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>theatre director</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaRole/a3e204ff-5254-4282-9260-dc3ae7795024 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaRole/a3e204ff-5254-4282-9260-dc3ae7795024">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>fundamental aspect in English academia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaRole/a57357c6-66de-42ba-a439-7d6e3c267c18 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaRole/a57357c6-66de-42ba-a439-7d6e3c267c18">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>playwright</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaRole/ddc4f358-95f1-40ed-a0c6-042316773d12 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaRole/ddc4f358-95f1-40ed-a0c6-042316773d12">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>actor</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaRole/20c283b4-2165-407b-b837-cddbdb9437fe -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaRole/20c283b4-2165-407b-b837-cddbdb9437fe">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>owner of a theatre company</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaRole/4f715689-9e98-4d41-8319-a0677959f753 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaRole/4f715689-9e98-4d41-8319-a0677959f753">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>author</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaRole/469c1b7c-4977-460e-b39b-310b5263b183 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaRole/469c1b7c-4977-460e-b39b-310b5263b183">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>most important references in the history of literature</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaRole/6e67fc41-de78-47da-9afe-79369b9adf82 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaRole/6e67fc41-de78-47da-9afe-79369b9adf82">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>fundamental axis of English-speaking culture</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaTimeInterval/25d068d6-1cb0-44ee-a98a-7c21ef525322 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaTimeInterval/25d068d6-1cb0-44ee-a98a-7c21ef525322">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>2000</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaTimeInterval/69849b7e-8a5c-40fe-9bd3-0e0a3e444c70 -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaTimeInterval/69849b7e-8a5c-40fe-9bd3-0e0a3e444c70">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <TI:atTime rdf:resource="http://w3id.org/stlab/its/teclaPerson/f5bb9a3e-940c-439c-bb49-dd991e904cfc"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1601</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/stlab/its/teclaTimeInterval/7bc13fd5-c9bf-4586-b0db-e4fdf47b52df -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/stlab/its/teclaTimeInterval/7bc13fd5-c9bf-4586-b0db-e4fdf47b52df">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>April 26, 1564</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Agent/aeed105c-3ca0-432d-80ef-a129d02ffd83 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Agent/aeed105c-3ca0-432d-80ef-a129d02ffd83">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Italian writers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Agent/ea886869-df4b-4ef0-a879-17012e58097f -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Agent/ea886869-df4b-4ef0-a879-17012e58097f">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <ontology:isPartOf rdf:resource="http://w3id.org/stlab/its/teclaInformationObject/1fc4162f-5c61-4e52-a1e6-fba62443e252"/>
+        <core:hasRole rdf:resource="https://w3id.org/arco/its/Role/4cae78b5-1273-4a90-8b11-c4afa7e171df"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Montecchi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Agent/ee6b7f29-2a43-42f7-8463-bd359affeaa7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Agent/ee6b7f29-2a43-42f7-8463-bd359affeaa7">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <ontology:isPartOf rdf:resource="http://w3id.org/stlab/its/teclaInformationObject/1fc4162f-5c61-4e52-a1e6-fba62443e252"/>
+        <core:hasRole rdf:resource="https://w3id.org/arco/its/Role/4cae78b5-1273-4a90-8b11-c4afa7e171df"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Cappelletti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/BibliographicResource/7d1d9c97-f929-4248-95a0-3fb27e43fe2c -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/BibliographicResource/7d1d9c97-f929-4248-95a0-3fb27e43fe2c">
+        <rdf:type rdf:resource="http://purl.org/dc/elements/1.1/BibliographicResource"/>
+        <context-description:hasAuthor rdf:resource="https://w3id.org/arco/its/Person/43e20fd3-fd3d-4241-9b5a-c53c2880c68e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>BBC series Shakespeare in Italy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/b8fc5288-9b02-4292-b276-15e4dd1eba1b -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/b8fc5288-9b02-4292-b276-15e4dd1eba1b">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <core:hasLocation rdf:resource="https://w3id.org/arco/its/Location/fcdfd716-0150-470e-8de1-984812d939a8"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Julius Caesar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/c4ad2948-8607-45e5-87fd-196aeb8a09db -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/c4ad2948-8607-45e5-87fd-196aeb8a09db">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasGenre rdf:resource="http://w3id.org/stlab/its/tecla#comic_tragic"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#historical_problems"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#legal_problems"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#political_problems"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#religious_problems"/>
+        <ontology:hasTrait rdf:resource="http://w3id.org/stlab/its/tecla#strong_sociological_charge"/>
+        <context-description:hasAuthor rdf:resource="https://w3id.org/arco/its/Person/dd0445dd-e2d2-4ea4-900c-137c11a288a8"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The Merchant of Venice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/0b4c95e3-845d-4d7c-a33d-6137660d3945 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/0b4c95e3-845d-4d7c-a33d-6137660d3945">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:hasAuthor rdf:resource="https://w3id.org/arco/its/Person/af3969e5-df22-4d50-aa5b-6620b8cdeffe"/>
+        <core:hasLocation rdf:resource="https://w3id.org/arco/its/Location/0c8a8830-4c45-44ba-bd06-acc4e2d59983"/>
+        <core:hasLocation rdf:resource="https://w3id.org/arco/its/Location/7a494d84-71ec-4fa5-9cc3-599535c1e065"/>
+        <core:hasLocation rdf:resource="https://w3id.org/arco/its/Location/7d6d49fb-b31a-4065-a13f-ec280ba2ca23"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>plays</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/3b7f8d8e-ebe2-4174-aee1-54902f79ccd2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/3b7f8d8e-ebe2-4174-aee1-54902f79ccd2">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasGenre rdf:resource="http://w3id.org/stlab/its/tecla#tragic_drama"/>
+        <context-description:hasAuthor rdf:resource="https://w3id.org/stlab/its/tecla1Person/c5d684c1-d390-4ccc-904d-fcff215d9e40"/>
+        <context-description:isInspiredBy rdf:resource="https://w3id.org/arco/its/Person/350ba919-356b-4893-b199-020c1ecbf907"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Romeo and Juliet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/52520310-5f7f-427d-a83b-c9da9eb72dbb -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/52520310-5f7f-427d-a83b-c9da9eb72dbb">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:hasAuthor rdf:resource="https://w3id.org/stlab/its/tecla1Person/c5d684c1-d390-4ccc-904d-fcff215d9e40"/>
+        <context-description:isInspiredBy rdf:resource="https://w3id.org/arco/its/InformationObject/9ccab8f3-8213-4bd2-86b2-03f2ca5ac6e2"/>
+        <core:hasLocation rdf:resource="https://w3id.org/arco/its/Location/9897708c-d81b-415b-9fdf-1d19f1053e4e"/>
+        <TI:atTime rdf:resource="https://w3id.org/arco/its/TimeInterval/0a997b74-8c24-410f-8c1f-fa4f252539da"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The Taming of the Shrew</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/61bc05ad-bc3f-4dda-acab-71c302ef4922 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/61bc05ad-bc3f-4dda-acab-71c302ef4922">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#money"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#sex"/>
+        <core:hasLocation rdf:resource="https://w3id.org/arco/its/Location/847a6344-9ea4-4a88-b37f-6c587bf28dab"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Othello</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/75f4f4c4-2d11-4c09-a892-03f0e4454228 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/75f4f4c4-2d11-4c09-a892-03f0e4454228">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Italian story</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/854501f6-2199-40da-87e6-d739291a80d1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/854501f6-2199-40da-87e6-d739291a80d1">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:isInspiredBy rdf:resource="https://w3id.org/arco/its/InformationObject/75f4f4c4-2d11-4c09-a892-03f0e4454228"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The Merchant of Venice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/InformationObject/9ccab8f3-8213-4bd2-86b2-03f2ca5ac6e2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/InformationObject/9ccab8f3-8213-4bd2-86b2-03f2ca5ac6e2">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <context-description:hasAuthor rdf:resource="https://w3id.org/arco/its/Person/5c2f0165-e994-477b-8b96-639e7e39669f"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>I Suppositi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Location/a18ef30c-549d-49f6-9709-5af47ddd3673 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Location/a18ef30c-549d-49f6-9709-5af47ddd3673">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Italy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Location/fcdfd716-0150-470e-8de1-984812d939a8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Location/fcdfd716-0150-470e-8de1-984812d939a8">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Rome</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Location/0c8a8830-4c45-44ba-bd06-acc4e2d59983 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Location/0c8a8830-4c45-44ba-bd06-acc4e2d59983">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Verona</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Location/7a494d84-71ec-4fa5-9cc3-599535c1e065 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Location/7a494d84-71ec-4fa5-9cc3-599535c1e065">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Venice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Location/7d6d49fb-b31a-4065-a13f-ec280ba2ca23 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Location/7d6d49fb-b31a-4065-a13f-ec280ba2ca23">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <core:hasLocation rdf:resource="https://w3id.org/arco/its/InformationObject/52520310-5f7f-427d-a83b-c9da9eb72dbb"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Padua</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Location/847a6344-9ea4-4a88-b37f-6c587bf28dab -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Location/847a6344-9ea4-4a88-b37f-6c587bf28dab">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Venice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Location/9897708c-d81b-415b-9fdf-1d19f1053e4e -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Location/9897708c-d81b-415b-9fdf-1d19f1053e4e">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Italy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/af3969e5-df22-4d50-aa5b-6620b8cdeffe -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/af3969e5-df22-4d50-aa5b-6620b8cdeffe">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="https://w3id.org/arco/its/Person/f0571518-0ec9-425a-9793-9c448d2431bf"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/teclaPerson/b2fe6fe2-2561-4c87-b501-2b57729c9a15"/>
+        <owl:sameAs rdf:resource="https://w3id.org/stlab/its/tecla1Person/736a3d0f-3c9b-4543-8f2a-81a4c345f56b"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>WILLIAM Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/dd0445dd-e2d2-4ea4-900c-137c11a288a8 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/dd0445dd-e2d2-4ea4-900c-137c11a288a8">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/teclaPerson/b2fe6fe2-2561-4c87-b501-2b57729c9a15"/>
+        <context-description:isInspiredBy rdf:resource="https://w3id.org/arco/its/Location/a18ef30c-549d-49f6-9709-5af47ddd3673"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/f0571518-0ec9-425a-9793-9c448d2431bf -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/f0571518-0ec9-425a-9793-9c448d2431bf">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Bard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/f9b9750d-5b37-4ea8-8f83-2169f61c4aba -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/f9b9750d-5b37-4ea8-8f83-2169f61c4aba">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="https://w3id.org/arco/its/Person/8feddcb7-954c-4872-a259-b51433d2b293"/>
+        <owl:sameAs rdf:resource="https://w3id.org/arco/its/Person/0750d4c5-35e7-4176-be57-3f17e6332017"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Francesco da Mosto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/0750d4c5-35e7-4176-be57-3f17e6332017 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/0750d4c5-35e7-4176-be57-3f17e6332017">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="https://w3id.org/arco/its/Person/43e20fd3-fd3d-4241-9b5a-c53c2880c68e"/>
+        <owl:sameAs rdf:resource="https://w3id.org/arco/its/Person/8feddcb7-954c-4872-a259-b51433d2b293"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Francesco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/350ba919-356b-4893-b199-020c1ecbf907 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/350ba919-356b-4893-b199-020c1ecbf907">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="https://w3id.org/arco/its/Role/db8536db-b95a-4eab-9781-0a1c64b498f1"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Luigi Da Porto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/43e20fd3-fd3d-4241-9b5a-c53c2880c68e -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/43e20fd3-fd3d-4241-9b5a-c53c2880c68e">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="https://w3id.org/arco/its/Person/0750d4c5-35e7-4176-be57-3f17e6332017"/>
+        <context-description:isInspiredBy rdf:resource="https://w3id.org/arco/its/Person/4920bc5b-be3f-4592-a60c-3213a8875aae"/>
+        <core:hasLocation rdf:resource="https://w3id.org/arco/its/Location/a18ef30c-549d-49f6-9709-5af47ddd3673"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Francesco da Mosto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/4920bc5b-be3f-4592-a60c-3213a8875aae -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/4920bc5b-be3f-4592-a60c-3213a8875aae">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Bard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/5c2f0165-e994-477b-8b96-639e7e39669f -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/5c2f0165-e994-477b-8b96-639e7e39669f">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="https://w3id.org/arco/its/Role/e686fb9f-1b60-4507-b009-42d80d1b1299"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Ludovico Ariosto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/8feddcb7-954c-4872-a259-b51433d2b293 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/8feddcb7-954c-4872-a259-b51433d2b293">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Francesco da Mosto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Person/83887b33-b671-4291-ba1d-045a5b27370b -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Person/83887b33-b671-4291-ba1d-045a5b27370b">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/teclaPerson/b2fe6fe2-2561-4c87-b501-2b57729c9a15"/>
+        <context-description:isInspiredBy rdf:resource="https://w3id.org/arco/its/Agent/aeed105c-3ca0-432d-80ef-a129d02ffd83"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Role/cdc22861-6f1c-4ffc-aabc-11693dd9850c -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Role/cdc22861-6f1c-4ffc-aabc-11693dd9850c">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <core:hasRole rdf:resource="https://w3id.org/arco/its/Person/43e20fd3-fd3d-4241-9b5a-c53c2880c68e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>architect</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Role/db8536db-b95a-4eab-9781-0a1c64b498f1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Role/db8536db-b95a-4eab-9781-0a1c64b498f1">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>poet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Role/e686fb9f-1b60-4507-b009-42d80d1b1299 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Role/e686fb9f-1b60-4507-b009-42d80d1b1299">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>poet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Role/4cae78b5-1273-4a90-8b11-c4afa7e171df -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Role/4cae78b5-1273-4a90-8b11-c4afa7e171df">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <ontology:isPartOf rdf:resource="https://w3id.org/arco/its/InformationObject/52520310-5f7f-427d-a83b-c9da9eb72dbb"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>feuding families</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Role/592a2d72-3a15-43fb-875d-2216c0d926da -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Role/592a2d72-3a15-43fb-875d-2216c0d926da">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <core:hasRole rdf:resource="https://w3id.org/arco/its/Person/43e20fd3-fd3d-4241-9b5a-c53c2880c68e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>presenter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/Role/88e987ae-e948-48d5-80bb-4d1dc12251ed -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/Role/88e987ae-e948-48d5-80bb-4d1dc12251ed">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <core:hasRole rdf:resource="https://w3id.org/arco/its/Person/43e20fd3-fd3d-4241-9b5a-c53c2880c68e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Venetian writer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/arco/its/TimeInterval/0a997b74-8c24-410f-8c1f-fa4f252539da -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/arco/its/TimeInterval/0a997b74-8c24-410f-8c1f-fa4f252539da">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1590</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Agent/62aeb86a-7540-428c-bfe2-7e03f508cf9a -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Agent/62aeb86a-7540-428c-bfe2-7e03f508cf9a">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <ontology:isCreatedBy rdf:resource="https://w3id.org/stlab/its/tecla1Person/736a3d0f-3c9b-4543-8f2a-81a4c345f56b"/>
+        <core:hasRole rdf:resource="https://w3id.org/stlab/its/tecla1Role/88a52e49-bf28-40cc-998e-3a200d164fc6"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The Lord Chamberlain’s Men</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1BibliographicResource/ed970b9b-1bfc-41bd-b1ac-44e27cb59396 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1BibliographicResource/ed970b9b-1bfc-41bd-b1ac-44e27cb59396">
+        <rdf:type rdf:resource="http://purl.org/dc/elements/1.1/BibliographicResource"/>
+        <ontology:isPartOf rdf:resource="https://w3id.org/stlab/its/tecla1Role/54940b8f-fe01-46ba-beb7-047684006918"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The Complete Works of William Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1InformationObject/a13256b3-60d1-47f0-9ec3-6a3ebbb200b9 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1InformationObject/a13256b3-60d1-47f0-9ec3-6a3ebbb200b9">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <TI:atTime rdf:resource="https://w3id.org/stlab/its/tecla1TimeInterval/90144514-0ea2-4a8a-bb66-6ca406c3eb1e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The King’s Men</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1InformationObject/ea0aaa4c-6ff7-4fcc-ba87-0f187c109f36 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1InformationObject/ea0aaa4c-6ff7-4fcc-ba87-0f187c109f36">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:isPartOf rdf:resource="http://w3id.org/stlab/its/teclaRole/469c1b7c-4977-460e-b39b-310b5263b183"/>
+        <ontology:isPartOf rdf:resource="http://w3id.org/stlab/its/teclaRole/6e67fc41-de78-47da-9afe-79369b9adf82"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare&apos;s plays</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1InformationObject/1b915679-dfe7-4108-a914-7a71cdc2bad7 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1InformationObject/1b915679-dfe7-4108-a914-7a71cdc2bad7">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The Winter’s Tale</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/stlab/its/tecla1InformationObject/1b915679-dfe7-4108-a914-7a71cdc2bad7"/>
+        <owl:assertionProperty rdf:resource="http://w3id.org/stlab/its/tecla/ontology/hasGenre"/>
+        <owl:targetIndividual rdf:resource="http://w3id.org/stlab/its/tecla#romance"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1InformationObject/298ff5b2-9c45-4489-96a2-c2ce77fdca17 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1InformationObject/298ff5b2-9c45-4489-96a2-c2ce77fdca17">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:diedIn rdf:resource="http://w3id.org/stlab/its/teclaLocation/f8118e9b-95b8-492e-ab7e-4cd9aa6fa0f9"/>
+        <ontology:diedIn rdf:resource="https://w3id.org/stlab/its/tecla1TimeInterval/67145513-8ec1-488a-8bc9-042db34307ce"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/teclaPerson/b2fe6fe2-2561-4c87-b501-2b57729c9a15"/>
+        <core:hasLocation rdf:resource="https://w3id.org/stlab/its/tecla1Location/141f87cc-3b88-4ad7-a111-14b9405e823f"/>
+        <TI:atTime rdf:resource="https://w3id.org/stlab/its/tecla1TimeInterval/cc83ebf4-8fc6-4134-a52a-e511fea8dd1c"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The Rape of Lucrece</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1InformationObject/418f4e29-cd98-4412-b88d-654b8e5e63cd -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1InformationObject/418f4e29-cd98-4412-b88d-654b8e5e63cd">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <core:hasLocation rdf:resource="https://w3id.org/stlab/its/tecla1Location/141f87cc-3b88-4ad7-a111-14b9405e823f"/>
+        <TI:atTime rdf:resource="https://w3id.org/stlab/its/tecla1TimeInterval/e8aea759-1f88-4e62-9a55-8f42cb6a785e"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Venus and Adonis</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1InformationObject/5e4a61c4-7c6a-4595-bfe0-9b047a58c621 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1InformationObject/5e4a61c4-7c6a-4595-bfe0-9b047a58c621">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>The Tempest</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/stlab/its/tecla1InformationObject/5e4a61c4-7c6a-4595-bfe0-9b047a58c621"/>
+        <owl:assertionProperty rdf:resource="http://w3id.org/stlab/its/tecla/ontology/hasGenre"/>
+        <owl:targetIndividual rdf:resource="http://w3id.org/stlab/its/tecla#romance"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1InformationObject/500a87b1-60b2-4571-b445-7ba1d733983b -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1InformationObject/500a87b1-60b2-4571-b445-7ba1d733983b">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <ontology:hasGenre rdf:resource="http://w3id.org/stlab/its/tecla#tragedie"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#relativism_of_monarchial_supremacy"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#rivalry_between_young_and_old"/>
+        <ontology:hasTheme rdf:resource="http://w3id.org/stlab/its/tecla#man&apos;s_confrontation_with_nature"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>King Lear</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1InformationObject/67aa3b48-c9fd-4edc-93ea-173a7add7078 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1InformationObject/67aa3b48-c9fd-4edc-93ea-173a7add7078">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationObject"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Macbeth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1InformationRealization/a5a4eb9a-c7cb-4151-8d27-3a0566091bbc -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1InformationRealization/a5a4eb9a-c7cb-4151-8d27-3a0566091bbc">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>First Folio</rdfs:label>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://w3id.org/stlab/its/tecla1InformationRealization/a5a4eb9a-c7cb-4151-8d27-3a0566091bbc"/>
+        <owl:assertionProperty rdf:resource="http://w3id.org/stlab/its/tecla/ontology/isPartOf"/>
+        <owl:targetIndividual rdf:resource="https://w3id.org/stlab/its/tecla1BibliographicResource/ed970b9b-1bfc-41bd-b1ac-44e27cb59396"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1InformationRealization/e80e4624-8946-4adb-9b25-a9d614819f40 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1InformationRealization/e80e4624-8946-4adb-9b25-a9d614819f40">
+        <rdf:type rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#InformationRealization"/>
+        <arco:involvesCulturalProperty rdf:resource="https://w3id.org/stlab/its/tecla1InformationObject/ea0aaa4c-6ff7-4fcc-ba87-0f187c109f36"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>No original manuscripts</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Location/ef910f30-c16d-4157-bd2a-bfc54c6c2f45 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Location/ef910f30-c16d-4157-bd2a-bfc54c6c2f45">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Stratford</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Location/141f87cc-3b88-4ad7-a111-14b9405e823f -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Location/141f87cc-3b88-4ad7-a111-14b9405e823f">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>London</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Location/6eaa623c-95d2-478e-bd51-3fc0cc279432 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Location/6eaa623c-95d2-478e-bd51-3fc0cc279432">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/l0/Location"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Henley Street</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Person/c5d684c1-d390-4ccc-904d-fcff215d9e40 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Person/c5d684c1-d390-4ccc-904d-fcff215d9e40">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="https://w3id.org/stlab/its/tecla1Person/736a3d0f-3c9b-4543-8f2a-81a4c345f56b"/>
+        <core:hasLocation rdf:resource="https://w3id.org/stlab/its/tecla1Location/6eaa623c-95d2-478e-bd51-3fc0cc279432"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>William Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Person/d6a588e7-218a-43ac-b1f3-7f417667309f -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Person/d6a588e7-218a-43ac-b1f3-7f417667309f">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isAuthorOf rdf:resource="https://w3id.org/stlab/its/tecla1InformationObject/298ff5b2-9c45-4489-96a2-c2ce77fdca17"/>
+        <context-description:isAuthorOf rdf:resource="https://w3id.org/stlab/its/tecla1InformationObject/418f4e29-cd98-4412-b88d-654b8e5e63cd"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Person/d785b0a4-a7e7-4135-b13a-43395dd01c33 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Person/d785b0a4-a7e7-4135-b13a-43395dd01c33">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ontology:marriedTo rdf:resource="https://w3id.org/stlab/its/tecla1Person/40a0d946-0fc1-40e9-80bc-99cddda3c6c3"/>
+        <core:hasLocation rdf:resource="https://w3id.org/stlab/its/tecla1Location/ef910f30-c16d-4157-bd2a-bfc54c6c2f45"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>John Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Person/e79c86a7-2633-41bb-acfb-3fe373b0468c -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Person/e79c86a7-2633-41bb-acfb-3fe373b0468c">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <context-description:isAuthorOf rdf:resource="https://w3id.org/stlab/its/tecla1InformationObject/1b915679-dfe7-4108-a914-7a71cdc2bad7"/>
+        <context-description:isAuthorOf rdf:resource="https://w3id.org/stlab/its/tecla1InformationObject/5e4a61c4-7c6a-4595-bfe0-9b047a58c621"/>
+        <context-description:isAuthorOf rdf:resource="https://w3id.org/stlab/its/tecla1InformationObject/500a87b1-60b2-4571-b445-7ba1d733983b"/>
+        <context-description:isAuthorOf rdf:resource="https://w3id.org/stlab/its/tecla1InformationObject/67aa3b48-c9fd-4edc-93ea-173a7add7078"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Person/fa2cc428-f2b1-4b11-8348-adcf77975e2a -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Person/fa2cc428-f2b1-4b11-8348-adcf77975e2a">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="https://w3id.org/stlab/its/tecla1Person/63bbbefe-290d-4a1f-97ed-5249d0aed3ff"/>
+        <core:hasRole rdf:resource="https://w3id.org/stlab/its/tecla1Role/a3a11f29-30d9-4f68-9b3d-93c98eaf82c1"/>
+        <core:hasRole rdf:resource="https://w3id.org/stlab/its/tecla1Role/f54e3df4-4de3-42b6-b2ba-12f8e05ca753"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>William Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Person/13210719-aecd-4da9-975f-aab5114e7832 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Person/13210719-aecd-4da9-975f-aab5114e7832">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <ontology:marriedTo rdf:resource="https://w3id.org/stlab/its/tecla1Person/c5d684c1-d390-4ccc-904d-fcff215d9e40"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Anne Hathaway</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Person/40a0d946-0fc1-40e9-80bc-99cddda3c6c3 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Person/40a0d946-0fc1-40e9-80bc-99cddda3c6c3">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Mary Arden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Person/63bbbefe-290d-4a1f-97ed-5249d0aed3ff -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Person/63bbbefe-290d-4a1f-97ed-5249d0aed3ff">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="https://w3id.org/stlab/its/tecla1Role/82066e2e-dcd0-450c-83cf-c39d835c9308"/>
+        <TI:atTime rdf:resource="https://w3id.org/stlab/its/tecla1TimeInterval/f2d3c921-57b9-43fb-9392-947def925444"/>
+        <TI:atTime rdf:resource="https://w3id.org/stlab/its/tecla1TimeInterval/868996f8-8d11-4e55-8a39-3e063a3c0516"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Person/7d0e3b52-4401-4ceb-8d79-79f57e14d093 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Person/7d0e3b52-4401-4ceb-8d79-79f57e14d093">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <core:hasRole rdf:resource="https://w3id.org/stlab/its/tecla1Role/54940b8f-fe01-46ba-beb7-047684006918"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>William Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Person/736a3d0f-3c9b-4543-8f2a-81a4c345f56b -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Person/736a3d0f-3c9b-4543-8f2a-81a4c345f56b">
+        <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+        <owl:sameAs rdf:resource="http://w3id.org/stlab/its/teclaPerson/b2fe6fe2-2561-4c87-b501-2b57729c9a15"/>
+        <core:hasRole rdf:resource="https://w3id.org/stlab/its/tecla1Role/be964854-5693-439a-a30b-9af3a383e6dc"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Shakespeare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Role/a3a11f29-30d9-4f68-9b3d-93c98eaf82c1 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Role/a3a11f29-30d9-4f68-9b3d-93c98eaf82c1">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>playwright</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Role/be964854-5693-439a-a30b-9af3a383e6dc -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Role/be964854-5693-439a-a30b-9af3a383e6dc">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>company&apos;s regular dramatist</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Role/f54e3df4-4de3-42b6-b2ba-12f8e05ca753 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Role/f54e3df4-4de3-42b6-b2ba-12f8e05ca753">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>poet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Role/54940b8f-fe01-46ba-beb7-047684006918 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Role/54940b8f-fe01-46ba-beb7-047684006918">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>most important literary figures of the English language</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Role/82066e2e-dcd0-450c-83cf-c39d835c9308 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Role/82066e2e-dcd0-450c-83cf-c39d835c9308">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <TI:atTime rdf:resource="https://w3id.org/stlab/its/tecla1TimeInterval/61d71568-7307-4d06-9763-a546d971d600"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>prolific writer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1Role/88a52e49-bf28-40cc-998e-3a200d164fc6 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1Role/88a52e49-bf28-40cc-998e-3a200d164fc6">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/RO/Role"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>company of actors</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1TimeInterval/cc83ebf4-8fc6-4134-a52a-e511fea8dd1c -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1TimeInterval/cc83ebf4-8fc6-4134-a52a-e511fea8dd1c">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1594</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1TimeInterval/e8aea759-1f88-4e62-9a55-8f42cb6a785e -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1TimeInterval/e8aea759-1f88-4e62-9a55-8f42cb6a785e">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1593</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1TimeInterval/f2d3c921-57b9-43fb-9392-947def925444 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1TimeInterval/f2d3c921-57b9-43fb-9392-947def925444">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>English Renaissance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1TimeInterval/00a797e8-c499-4edd-8b14-6defce69b82b -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1TimeInterval/00a797e8-c499-4edd-8b14-6defce69b82b">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1564</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1TimeInterval/02f3642f-e0ba-4d75-b59f-7f0336409a81 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1TimeInterval/02f3642f-e0ba-4d75-b59f-7f0336409a81">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>1616</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1TimeInterval/61d71568-7307-4d06-9763-a546d971d600 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1TimeInterval/61d71568-7307-4d06-9763-a546d971d600">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Elizabethan and Jacobean ages of British theatre</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1TimeInterval/67145513-8ec1-488a-8bc9-042db34307ce -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1TimeInterval/67145513-8ec1-488a-8bc9-042db34307ce">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>23 April 1616</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1TimeInterval/868996f8-8d11-4e55-8a39-3e063a3c0516 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1TimeInterval/868996f8-8d11-4e55-8a39-3e063a3c0516">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>Early Modern Period</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/stlab/its/tecla1TimeInterval/90144514-0ea2-4a8a-bb66-6ca406c3eb1e -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/stlab/its/tecla1TimeInterval/90144514-0ea2-4a8a-bb66-6ca406c3eb1e">
+        <rdf:type rdf:resource="https://w3id.org/italia/onto/TI/TimeInterval"/>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/arco/its/"/>
+        <rdfs:label>patronage of King James I</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
